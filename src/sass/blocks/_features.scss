@@ -1,0 +1,68 @@
+.features {
+	padding-top: 65px;
+
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			width: 360px;
+			height: 250px;
+
+			padding-top: 32px;
+
+			border-radius: 6px;
+
+			border: 1px solid #ececec;
+		}
+	}
+
+	&__before {
+		li {
+			background: url(../icons/questionmark.png) right bottom no-repeat;
+		}
+	}
+
+	&__after {
+		li {
+			background: url(../icons/checkmark.png) right bottom no-repeat;
+		}
+	}
+
+	&__icon {
+		width: 112px;
+		height: 124px;
+
+		margin: 0 auto;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+
+		&_main {
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 48px;
+			font-weight: 300;
+			padding-top: 100px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 180px;
+				height: 77px;
+				display: block;
+
+				background: url(../icons/arrowsdown.png) center center/contain no-repeat;
+			}
+		}
+	}
+}
