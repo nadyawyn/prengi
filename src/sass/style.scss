@@ -1,7 +1,18 @@
 @import "libs/normalize";
 @import "base/variables";
 @import "base/mixins";
+@import "libs/fonts";
 
 * {
 	box-sizing: border-box;
 }
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 15px;
+
+	outline: 1px solid yellowgreen;
+}
+
+@import "blocks/contacts";

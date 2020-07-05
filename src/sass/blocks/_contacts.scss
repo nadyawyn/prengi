@@ -1,0 +1,26 @@
+.contacts {
+	&__list {
+		display: flex;
+		justify-content: space-around;
+
+		&-item {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__flag {
+		width: 28px;
+		height: 20px;
+
+		outline: 1px solid red;
+	}
+
+	&__info {
+		outline: 1px solid yellow;
+	}
+
+	&__name {
+		margin: 0;
+	}
+}

@@ -1,5 +1,5 @@
 {
-  "name": "pulse",
+  "name": "prengi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nadyawyn/pulse.git"
+    "url": "git+https://github.com/nadyawyn/prengi.git"
   },
   "author": "nadya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nadyawyn/pulse/issues"
+    "url": "https://github.com/nadyawyn/prengi/issues"
   },
-  "homepage": "https://github.com/nadyawyn/pulse#readme",
+  "homepage": "https://github.com/nadyawyn/prengi#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
