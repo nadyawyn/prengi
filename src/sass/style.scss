@@ -15,8 +15,23 @@
 	outline: 1px solid yellowgreen;
 }
 
+.title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+
+	&_white {
+		color: #ffffff;
+	}
+
+	&_black {
+		color: #000000;
+	}
+}
+
 @import "blocks/buttons";
 @import "blocks/contacts";
 @import "blocks/header";
 @import "blocks/features";
 @import "blocks/solutions";
+@import "blocks/advantages";

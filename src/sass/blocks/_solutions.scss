@@ -6,13 +6,6 @@
 
 	outline: 1px solid yellowgreen;
 
-	&__title {
-		text-align: center;
-		font-size: 30px;
-		color: #ffffff;
-		font-weight: 300px;
-	}
-
 	&__tabs {
 		@include reset-list;
 		width: 860px;
