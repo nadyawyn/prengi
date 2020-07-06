@@ -1,0 +1,16 @@
+.start {
+	margin: 80px 0;
+
+	&__link {
+		display: block;
+		width: 302px;
+		height: 302px;
+		margin: 0 auto;
+
+		background: url(../../icons/start.png) center no-repeat;
+	}
+
+	&__title {
+		margin: 50px 0;
+	}
+}

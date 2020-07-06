@@ -13,4 +13,9 @@
 	text-transform: uppercase;
 
 	cursor: pointer;
+
+	&_center {
+		display: block;
+		margin: 0 auto;
+	}
 }
