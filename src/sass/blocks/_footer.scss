@@ -1,6 +1,44 @@
 .footer {
-	padding-top: 50px;
+	padding-top: 30px;
 	height: 500px;
 	background-color: $color_blue_dark;
 	color: #ffffff;
+
+	&__info {
+		width: 375px;
+	}
+
+	&__nav {
+		display: grid;
+		grid-template-columns: 1fr 150px 150px;
+
+		&-list {
+			@include reset-list;
+
+			padding: 0 20px;
+			font-size: 14px;
+			line-height: 24px;
+
+			a {
+				color: #ffffff;
+				text-decoration: none;
+			}
+		}
+
+
+	}
+
+	&__copy {
+		width: 100%;
+		text-align: center;
+		padding: 25px;
+		font-size: 14px;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+
+		border-bottom: 1px solid rgba($color: #ffffff, $alpha: .5);
+	}
 }
