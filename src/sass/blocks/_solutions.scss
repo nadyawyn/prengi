@@ -18,7 +18,7 @@
 		justify-content: center;
 
 		li {
-			padding: 15px 22px;
+			//padding: 15px 22px;
 			border-right: 1px solid rgba($color: #ffffff, $alpha: 0.5);
 			text-align: center;
 
@@ -29,6 +29,10 @@
 			a {
 				color: #ffffff;
 				text-decoration: none;
+
+				display: block;
+				height: 100%;
+				padding: 15px 22px;
 
 				&:hover {
 					color: $color_blue;

@@ -1,23 +1,87 @@
-@keyframes buttonScaleUp {
+.fade {
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
 	from {
-		transform: scale(1);
+		opacity: 0.1;
 	}
-	50% {
-		transform: scale(1.1);
-	}
+
 	to {
-		transform: scale(1);
+		opacity: 1;
 	}
 }
 
-@keyframes demoScaleUp {
+@keyframes fade {
 	from {
-		transform: scale(1);
+		opacity: 0.1;
 	}
-	50% {
-		transform: scale(1.1);
-	}
+
 	to {
-		transform: scale(2);
+		opacity: 1;
 	}
 }
+
+/* 
+.moveleft {
+	-webkit-animation-name: moveleft;
+	animation-name: moveleft;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-name: moveleft;
+	-webkit-animation-duration: 2.5s;
+}
+
+@keyframes moveleft {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes moveleft {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.movetoplace {
+	-webkit-animation-name: movetoplace;
+	animation-name: movetoplace;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-name: movetoplace;
+	-webkit-animation-duration: 2.5s;
+}
+
+@keyframes movetoplace {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes movetoplace {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+} */
