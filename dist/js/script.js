@@ -19,19 +19,21 @@ window.addEventListener('DOMContentLoaded', function () {
 			slideIndex = slides.length;
 		}
 
-		slides.forEach((item) => {
+		/* slides.forEach((item) => {
 			item.style.display = 'none'; // Add display:none to all the slider__items
-		});
+		}); */
 
 		dots.forEach((item) => { // Remove class active from all the slider__dots
 			item.classList.remove('dot-active');
 		});
 
-		slides[slideIndex - 1].style.display = 'block'; // Show the current slider__item
+		//slides[slideIndex - 1].style.display = 'block'; // Show the current slider__item
+		slides[slideIndex - 2].classList.add('moveleft');
+		slides[slideIndex - 1].classList.add('movetoplace');
 		dots[slideIndex - 1].classList.add('dot-active'); // Make the current slider__dot active
 	}
 
-	showSlides(slideIndex);
+	//showSlides(slideIndex);
 
 	function slidePlus(n) { // Function to switch to the next / previous slide
 		showSlides(slideIndex += n);
