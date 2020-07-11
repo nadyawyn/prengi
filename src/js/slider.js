@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				_sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
 				_sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
 				_sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+
 				_wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
 				_itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
 				_positionLeftItem = 0, // позиция левого активного элемента
@@ -136,6 +137,22 @@ window.addEventListener('DOMContentLoaded', function () {
 			_addIndicators();
 			// инициализация
 			_setUpListeners();
+
+			let ol = document.querySelector('.slider__indicators');
+			ol.before('before'); // вставить строку "before" перед <ol>
+			ol.after('after'); // вставить строку "after" после <ol>
+
+			let liFirst = document.createElement('li');
+			liFirst.classList.add('slider__control_left');
+			liFirst.classList.add('slider__control');
+			ol.prepend(liFirst); // вставить liFirst в начало <ol>
+
+			let liLast = document.createElement('li');
+			liLast.classList.add('slider__control_right');
+			liLast.classList.add('slider__control');
+			ol.append(liLast); // вставить liLast в конец <ol>
+
+
 
 			return {
 				right: function () { // метод right
