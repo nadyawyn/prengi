@@ -108,6 +108,7 @@ window.addEventListener('DOMContentLoaded', function () {
 					var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
 					_transformItem(direction);
 				}
+
 				if (e.target.getAttribute('data-slide-to')) {
 					e.preventDefault();
 					_slideTo(parseInt(e.target.getAttribute('data-slide-to')));
@@ -117,6 +118,8 @@ window.addEventListener('DOMContentLoaded', function () {
 			var _setUpListeners = function () {
 				_mainElement.addEventListener('click', _controlClick);
 			};
+
+
 
 			var _addIndicators = function () {
 				var sliderIndicators = document.createElement('ol');
@@ -139,8 +142,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			_setUpListeners();
 
 			let ol = document.querySelector('.slider__indicators');
-			ol.before('before'); // вставить строку "before" перед <ol>
-			ol.after('after'); // вставить строку "after" после <ol>
 
 			let liFirst = document.createElement('li');
 			liFirst.classList.add('slider__control_left');

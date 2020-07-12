@@ -26,17 +26,23 @@
 				border-right: none;
 			}
 
-			a {
-				color: #ffffff;
-				text-decoration: none;
+			cursor: pointer;
+			color: #ffffff;
+			text-decoration: none;
 
-				display: block;
-				height: 100%;
-				padding: 15px 22px;
+			display: block;
+			height: 100%;
+			padding: 15px 22px;
 
-				&:hover {
-					color: $color_blue;
-				}
+			&:hover {
+				color: $color_blue;
+			}
+
+
+			&.active {
+				color: $color_blue;
+				font-weight: 700;
+				cursor: default;
 			}
 		}
 
@@ -46,32 +52,10 @@
 
 			outline: 1px solid green;
 
-
-			.prev,
-			.next {
-				position: absolute;
-				display: block;
-				width: 50px;
-				height: 100%;
-				cursor: pointer;
-			}
-
-			.prev {
-				top: 0;
-				left: 0;
-				background: url(../icons/arrowleft.png) center no-repeat;
-			}
-
-			.next {
-				top: 0;
-				right: 0;
-				background: url(../icons/arrowright.png) center no-repeat;
-			}
 		}
 
 		&-content {
 			height: 545px;
-			padding: 0 50px;
 			text-align: center;
 			outline: 1px solid blueviolet;
 		}
