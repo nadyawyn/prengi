@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-
 	'use strict';
 	var multiItemSliderMid = (function () {
 		return function (selector, config) {
