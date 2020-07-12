@@ -31,6 +31,10 @@
 	}
 }
 
+.lt_visible {
+	display: none;
+}
+
 @import "blocks/buttons";
 @import "blocks/contacts";
 @import "blocks/header";

@@ -5,8 +5,58 @@
 
 
 	}
+
+	.header {
+		&__menu {
+			&-wrapper {
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.header__menu-wrapper .container_menu {
+		padding: 20px;
+	}
 }
 
-.header__menu-wrapper .container_menu {
-	padding: 20px;
+@media (max-width: $width__laptop) {
+	.header {
+		&__slider {
+			&-title {
+				font-size: 36px;
+			}
+		}
+	}
+
+	.lt_visible {
+		display: inline;
+	}
+
+	.slider {
+		&__indicators {
+			margin: 0;
+			background-color: rgba($color: #000000, $alpha: .3)
+		}
+	}
+}
+
+@media (max-width: $width__laptop_s) {
+	.header {
+		&__slider {
+			&-img {
+				display: none;
+			}
+		}
+	}
+
+	.contacts {
+		&__list {
+			flex-flow: row wrap;
+			justify-content: start;
+
+			&-item {
+				margin: 5px 20px;
+			}
+		}
+	}
 }
