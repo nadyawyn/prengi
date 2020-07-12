@@ -85,7 +85,7 @@
 								<h2 class="header__slider-subtitle">
 									PRENGI is a platform for transparent business management
 								</h2>
-								<button class="button">Get access</button>
+								<button class="button button_contact1">Get access</button>
 							</div>
 							<div class="header__slider-img"></div>
 						</div>
@@ -329,7 +329,7 @@
 				<h2 class="title title_black start__title">
 					It is easy to start! <br>Just get access and get to the business!
 				</h2>
-				<button class="button button_center">Contact us</button>
+				<button class="button button_center button_contact2">Contact us</button>
 			</div>
 
 
@@ -400,11 +400,21 @@
 		</div>
 	</footer>
 
-	<div class="overlay">
-		<div class="contact-popup">
+	<div class="overlay hidden">
+		<div class="contact-popup hidden">
+			<div class="contact-popup__close">
+				&times;
+			</div>
 
+			<input type="text" name="yourname" id="yourname" class="contact-popup__field" placeholder="Your name">
+			<input type="text" name="youremail" id="youremail" class="contact-popup__field" placeholder="Your Email">
+			<textarea name="yourmessage" id="yourmessage" class="contact-popup__field contact-popup__message"
+				placeholder="Your message"></textarea>
+
+			<button class="button">SEND</button>
 		</div>
 	</div>
+	<script src="js/script.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/slider-mid.js"></script>
 </body>
