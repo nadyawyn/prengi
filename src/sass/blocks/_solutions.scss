@@ -1,10 +1,8 @@
 .solutions {
 	height: 890px;
-	background: url(../img/bg/bg002.jpg) center (center/cover) no-repeat;
+	background: url(../img/slider/bg.jpg) center (center/cover) no-repeat;
 
 	padding-top: 35px;
-
-	outline: 1px solid yellowgreen;
 
 	&__tabs {
 		@include reset-list;
@@ -50,14 +48,23 @@
 			min-height: 545px;
 			position: relative;
 
-			outline: 1px solid green;
-
 		}
 
 		&-content {
-			height: 545px;
 			text-align: center;
-			outline: 1px solid blueviolet;
 		}
+	}
+
+	&__subtitle {
+		color: #ffffff;
+		font-size: 26px;
+		font-weight: 200;
+	}
+
+	&__desc {
+		color: #ffffff;
+		font-size: 26px;
+		font-weight: 700;
+		letter-spacing: 10px;
 	}
 }
