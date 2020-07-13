@@ -213,6 +213,18 @@
 		}
 	}
 
+	.footer {
+		&__info {
+			p {
+				font-size: 14px;
+			}
+		}
+
+		&__nav {
+			grid-template-columns: 1fr 100px 100px;
+		}
+	}
+
 	.tb_visible {
 		display: block;
 	}
