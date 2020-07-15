@@ -296,6 +296,23 @@
 		}
 	}
 
+	.options {
+		&__title {
+			margin-top: -10px;
+		}
+
+		&__wrapper {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+
+		&__item {
+			&-content {
+				margin-top: 15px;
+			}
+		}
+	}
+
 	.footer {
 		&__info {
 			p {

@@ -4,10 +4,6 @@
 	list-style: none;
 }
 
-@mixin hide-element {
-	display: none;
-}
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
