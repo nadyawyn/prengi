@@ -321,7 +321,11 @@
 		}
 
 		&__nav {
-			grid-template-columns: 1fr 100px 100px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		.container {
+			flex-flow: column;
 		}
 	}
 
