@@ -207,6 +207,89 @@
 		}
 	}
 
+	.header {
+		&__menu {
+			&-wrapper {
+				height: 100%;
+			}
+		}
+
+		&__nav {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+
+			display: flex;
+
+			justify-content: flex-end;
+
+			&-menu {
+				//display: none;
+				flex: 0 0 100%;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				background-color: rgba($color: #000000, $alpha: .7);
+				font-size: 20px;
+			}
+
+			&-close {
+				position: relative;
+				order: 2;
+				transition: all 0.5s;
+				position: absolute;
+				right: 7px;
+				top: 4px;
+				width: 50px;
+				height: 50px;
+
+				border: 2px solid #ffffff;
+
+				&::before,
+				&::after {
+					transition: all 0.5s;
+					content: "";
+					position: absolute;
+					display: block;
+					width: 34px;
+					height: 2px;
+
+					background-color: #fff;
+				}
+
+				&::before {
+					top: 7px;
+					left: 6px;
+					box-shadow: 0 10px 0 #ffffff, 0 20px 0 #ffffff;
+				}
+
+				&::after {
+					bottom: 7px;
+					right: 6px;
+				}
+
+				&.close {
+					&::before {
+						transition: all 0.5s;
+						top: 23px;
+						left: 6px;
+						box-shadow: none;
+						transform: rotate(45deg);
+					}
+
+					&::after {
+						transition: all 0.5s;
+						top: 23px;
+						right: 7px;
+						transform: rotate(-45deg);
+					}
+				}
+			}
+
+		}
+	}
+
 	.slider {
 		&__indicators {
 			background-color: transparent;
