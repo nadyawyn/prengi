@@ -333,3 +333,41 @@
 		display: block;
 	}
 }
+
+@media(max-width: $width__mobile_l) {
+	.features {
+		&__list {
+			flex-flow: column;
+
+			li {
+				width: 100%;
+				height: 210px;
+			}
+		}
+	}
+
+	.solutions {
+		padding-top: 0;
+
+		&__tabs {
+			&-item {
+				padding: 10px;
+			}
+		}
+	}
+
+	.advantages {
+		&__list {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+
+			&-item {
+				height: 140px;
+
+				a {
+					min-height: 0;
+				}
+			}
+		}
+	}
+}
