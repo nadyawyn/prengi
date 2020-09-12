@@ -25,7 +25,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "http-proxy": ">=1.18.1"
   },
   "browserslist": [
     "last 2 versions",
